@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="hero">
+        <img class="logo" src="./Resources/Images/logo.webp">
+        <h1 class="header">Fallout</h1>
+        <button class="btn-1" onclick="myFunction7()"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div id="dropdown" style="display: none;">
+        <button class="btn-nav">button 1</button>
+        <button class="btn-nav">button 2</button>
+        <button class="btn-nav">button 3</button>
+        <button class="btn-nav">button 4</button>
+    </div>
+    <div class="container-1-background">
+        <div class="container-1">
+            <img class="img-1" src="./Resources/Images/image1.webp">
+            <div class="text-box-1">
+                <h1 class="text-box-1-h1">What is?</h1>
+                <p class="text-box-1-p">Fallout is a media franchise of post-apocalyptic role-playing video games—and later action role-playing games—created by <a href="https://en.wikipedia.org/wiki/Tim_Cain" target="_blank">Tim Cain</a>, at Interplay Entertainment. The series is set during the 21st, 22nd and 23rd centuries, and its atompunk retrofuturistic setting and art work are influenced by the post-war culture of 1950s United States, with its combination of hope for the promises of technology and the lurking fear of nuclear annihilation.</p>
+            </div>
+        </div>
+    </div>
+    <div class="divider">
+        <div class="div-txt">
+            <h>Locations</h>
+        </div>
+    </div>
+    <div class="container-2-background">
+        <div class="container-2">
+            <iframe width="900" height="600" src="https://www.youtube.com/embed/iSIDtxHaFpk?si=hrZ9sdNGuoLPqoG1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="text-box-2">
+                <h1 class="text-box-2-h1">Game Locations</h1>
+                <button onclick="myFunction1();togglediv()" class="btn-map"> Fallout 1-2</button>
+                <button onclick="myFunction2();togglediv1()" class="btn-map"> Fallout 3</button>
+                <button onclick="myFunction3();togglediv2()" class="btn-map"> Fallout: New vegas</button>
+                <button onclick="myFunction4();togglediv3()" class="btn-map"> Fallout 4</button>
+                <button onclick="myFunction5();togglediv4()" class="btn-map"> Fallout 76</button>
+                <ul class="text-box-2-li">
+                    <li>Fallout 1 – New California.</li>
+                    <li>Fallout 2 – New California.</li>
+                    <li>Fallout 3 – Capital Wasteland.</li>
+                    <li>Fallout: New Vegas – Mojave Wasteland.</li>
+                    <li>Fallout 4 – The Commonwealth.</li>
+                    <li>Fallout 76 – Appalachia.</li>
+                </ul>
+            </div>
+            <div class="map1 map2 map3 map4 map5">
+                <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=usa&amp;t=&amp;z=3&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanymph.com/">Gacha Nymph</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style></div>
+            </div>
+            <div id="Boston" class="map1 map2 map3 map map5" style="display: none;">
+                <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=boston&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanymph.com/">Gacha Nymph</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+            </div>
+            <div id="California" class="map map2 map3 map4 map5" style="display: none;">
+                <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Southern California&amp;t=&amp;z=8&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanymph.com/">Gacha Nymph</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style></div>
+            </div>
+            <div id="washington" class="map1 map map3 map4 map5" style="display: none;">
+                <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=washington dc&amp;t=&amp;z=9&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanymph.com/">Gacha Nymph</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style></div>
+            </div>
+            <div id="Nevada" class="map1 map2 map map4 map5" style="display: none;">
+                <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=las vegas&amp;t=&amp;z=9&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanymph.com/">Gacha Nymph</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style></div>
+            </div>
+            <div id="westvirginia" class="map1 map2 map3 map4 map" style="display: none;">
+                <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=west virginia&amp;t=&amp;z=7&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanymph.com/">Gacha Nymph</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style></div>
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="container-3"></div>
+    <div class="divider"></div>
+    <div class="container-4"></div>
+    <div class="divider"></div>
+    <div class="footer"></div>   
+</body>
+</html>
